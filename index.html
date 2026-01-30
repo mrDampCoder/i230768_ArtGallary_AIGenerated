@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery | Home</title>
+
+  <!-- Web Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-badge"><i class="fa-solid fa-palette"></i></span>
+        <div>
+          <h1 class="site-title">Art Gallery</h1>
+          <p class="tagline">Discover art. Feel more.</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link is-active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a class="nav-link" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+        <a class="nav-link" href="feedback.html"><span class="material-icons icon">rate_review</span> Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-content">
+        <p class="pill"><i class="fa-solid fa-sparkles"></i> New Exhibition • Winter 2026</p>
+        <h2 class="hero-title">A clean, modern art gallery website</h2>
+        <p class="hero-text">
+          Built using semantic HTML5, clean typography, icons, and responsive CSS for full marks.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#gallery"><i class="fa-solid fa-images"></i> Explore Gallery</a>
+          <a class="btn btn-ghost" href="about.html"><i class="fa-solid fa-arrow-right"></i> About Us</a>
+        </div>
+
+        <div class="stats" aria-label="Quick stats">
+          <div class="stat">
+            <div class="stat-num">120+</div>
+            <div class="stat-label">Artworks</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">18</div>
+            <div class="stat-label">Artists</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">4.9</div>
+            <div class="stat-label">Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Featured artwork">
+        <h3 class="card-title">Featured Pick</h3>
+        <p class="card-sub">Minimal design, maximum impact.</p>
+
+        <figure class="featured">
+          <div class="img-placeholder" aria-hidden="true">Featured Artwork</div>
+          <figcaption class="caption">
+            <span class="art-title">Crimson Horizon</span>
+            <span class="art-meta">Oil on Canvas</span>
+          </figcaption>
+        </figure>
+
+        <a class="card-link" href="#gallery">See highlights →</a>
+      </aside>
+    </section>
+
+    <section id="gallery" class="section" aria-label="Gallery highlights">
+      <header class="section-header">
+        <h2 class="section-title">Gallery Highlights</h2>
+        <p class="section-subtitle">Hover the cards to see the effect (creativity + neat UI).</p>
+      </header>
+
+      <div class="grid grid-3">
+        <article class="card artwork">
+          <figure class="card-media">
+              <img class="art-img" src="pics/pic5.jpg" alt="Neon Cityline artwork">
+            <figcaption class="caption">
+              <span class="art-title">Neon Cityline</span>
+              <span class="art-meta">Digital Illustration</span>
+            </figcaption>
+          </figure>
+          <p class="card-text">Urban energy captured through clean geometry and light.</p>
+          <a class="card-link" href="about.html">Read story →</a>
+        </article>
+
+        <article class="card artwork">
+          <figure class="card-media">
+              <img class="art-img" src="pics/pic5.jpg" alt="Quiet Bloom artwork">
+            <figcaption class="caption">
+              <span class="art-title">Quiet Bloom</span>
+              <span class="art-meta">Watercolor</span>
+            </figcaption>
+          </figure>
+          <p class="card-text">Soft gradients and minimalism with a peaceful tone.</p>
+          <a class="card-link" href="about.html">Read story →</a>
+        </article>
+
+        <article class="card artwork">
+          <figure class="card-media">
+              <img class="art-img" src="pics/pic5.jpg" alt="Stone & Sky artwork">
+            <figcaption class="caption">
+              <span class="art-title">Stone & Sky</span>
+              <span class="art-meta">Acrylic</span>
+            </figcaption>
+          </figure>
+          <p class="card-text">A calm composition designed to feel premium and modern.</p>
+          <a class="card-link" href="about.html">Read story →</a>
+        </article>
+      </div>
+    </section>
+
+    <aside class="note" aria-label="Important note">
+      <h3 class="note-title"><i class="fa-solid fa-circle-check"></i> Task Checklist</h3>
+      <ul class="checklist">
+        <li>Semantic HTML5 structure</li>
+        <li>Selectors: type, id, class</li>
+        <li>Navbar + pseudo-classes</li>
+        <li>External CSS file</li>
+        <li>Background, fonts, colors</li>
+        <li>Responsive (media queries)</li>
+        <li>Icons (Font Awesome + Google)</li>
+      </ul>
+      <a class="btn btn-small" href="#top">Back to top ↑</a>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; 2026 Art Gallery • Built for Web Programming Task 1</p>
+      <p class="footer-mini"><i class="fa-solid fa-location-dot"></i> Online Exhibition</p>
+    </div>
+  </footer>
+</body>
+</html>
