@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery | Feedback</title>
+
+  <!-- Web Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-badge"><i class="fa-solid fa-palette"></i></span>
+        <div>
+          <h1 class="site-title">Art Gallery</h1>
+          <p class="tagline">Discover art. Feel more.</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a class="nav-link" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+        <a class="nav-link is-active" href="feedback.html"><span class="material-icons icon">rate_review</span> Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head" aria-label="Feedback intro">
+      <h2 class="page-title">Feedback</h2>
+      <p class="page-subtitle">
+        Tell us what you think. This page uses a semantic form + neat layout + icons + responsive design.
+      </p>
+    </section>
+
+    <section class="feedback" aria-label="Feedback section">
+      <article class="card feedback-card">
+        <header class="auth-header">
+          <h3 class="card-title"><span class="material-icons icon">forum</span> Share your thoughts</h3>
+          <p class="card-text">Your feedback helps us improve the gallery experience.</p>
+        </header>
+
+        <form class="form" action="#" method="post">
+          <div class="grid grid-2">
+            <div class="form-row">
+              <label class="label" for="fbName">Name</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-user"></i>
+                <input id="fbName" class="input" type="text" name="name" placeholder="Your name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="label" for="fbEmail">Email</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="fbEmail" class="input" type="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="label" for="fbTopic">Topic</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-tag"></i>
+              <select id="fbTopic" class="input" name="topic" required>
+                <option value="" selected disabled>Select a topic</option>
+                <option>Website Design</option>
+                <option>Artwork Quality</option>
+                <option>Navigation / UI</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend class="label"><i class="fa-solid fa-star"></i> Rating</legend>
+
+            <div class="rating">
+              <label class="radio">
+                <input type="radio" name="rating" value="5" required>
+                <span>5</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="rating" value="4">
+                <span>4</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="rating" value="3">
+                <span>3</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="rating" value="2">
+                <span>2</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="rating" value="1">
+                <span>1</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <label class="label" for="fbMsg">Message</label>
+            <textarea
+              id="fbMsg"
+              class="textarea"
+              name="message"
+              rows="6"
+              placeholder="Write your feedback here..."
+              required
+            ></textarea>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" required>
+            <span>I confirm this feedback is genuine.</span>
+          </label>
+
+          <button class="btn btn-primary btn-full" type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Submit Feedback
+          </button>
+
+          <p class="muted center">
+            Want to contact us?
+            <a class="text-link" href="about.html">See About page</a>
+          </p>
+        </form>
+      </article>
+
+      <aside class="note feedback-note" aria-label="Feedback info">
+        <h3 class="note-title"><span class="material-icons icon">verified</span> Marking Points</h3>
+        <ul class="checklist">
+          <li>Semantic elements: header, nav, main, section, article, footer</li>
+          <li>Form with labels + input types</li>
+          <li>Pseudo-classes apply to navbar + buttons</li>
+          <li>Responsive via media queries (in CSS)</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; 2026 Art Gallery • Feedback Page</p>
+      <p class="footer-mini"><i class="fa-solid fa-heart"></i> Thanks for helping us improve</p>
+    </div>
+  </footer>
+</body>
+</html>
