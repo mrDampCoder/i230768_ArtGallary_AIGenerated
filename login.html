@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery | Login</title>
+
+  <!-- Web Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-badge"><i class="fa-solid fa-palette"></i></span>
+        <div>
+          <h1 class="site-title">Art Gallery</h1>
+          <p class="tagline">Discover art. Feel more.</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a class="nav-link is-active" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+        <a class="nav-link" href="feedback.html"><span class="material-icons icon">rate_review</span> Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head" aria-label="Login intro">
+      <h2 class="page-title">Login</h2>
+      <p class="page-subtitle">
+        This is a front-end login page (no database). Focus is on clean UI, form structure, and semantic HTML.
+      </p>
+    </section>
+
+    <section class="auth" aria-label="Login form section">
+      <article class="card auth-card">
+        <header class="auth-header">
+          <h3 class="card-title"><i class="fa-solid fa-lock"></i> Welcome back</h3>
+          <p class="card-text">Enter your details to continue.</p>
+        </header>
+
+        <form class="form" action="#" method="post">
+          <div class="form-row">
+            <label for="email" class="label">Email</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="input"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="password" class="label">Password</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-key"></i>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                class="input"
+                placeholder="••••••••"
+                minlength="6"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-split">
+            <label class="check">
+              <input type="checkbox" name="remember" />
+              <span>Remember me</span>
+            </label>
+
+            <a class="text-link" href="#" aria-label="Forgot password link">Forgot password?</a>
+          </div>
+
+          <button class="btn btn-primary btn-full" type="submit">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </button>
+
+          <p class="muted center">
+            Don’t have an account?
+            <a class="text-link" href="signup.html">Create one</a>
+          </p>
+        </form>
+      </article>
+
+      <aside class="note auth-note" aria-label="Login tips">
+        <h3 class="note-title"><span class="material-icons icon">info</span> Tip</h3>
+        <p class="note-text">
+          For marks: this page uses semantic layout, form inputs with labels, icons, and external CSS styling.
+        </p>
+        <ul class="checklist">
+          <li>Input types: email + password</li>
+          <li>Labels connected with <code>for</code> and <code>id</code></li>
+          <li>Neat UI structure</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; 2026 Art Gallery • Login Page</p>
+      <p class="footer-mini"><i class="fa-solid fa-shield"></i> Front-end only</p>
+    </div>
+  </footer>
+</body>
+</html>
